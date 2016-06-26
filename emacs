@@ -69,6 +69,12 @@
              '("\\(Capfile\\|Gemfile\\(?:\\.[a-zA-Z0-9._-]+\\)?\\|[rR]akefile\\)\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . ruby-mode))
 
+;; Dockerfile
+(use-package dockerfile-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode)))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Productivity Stuff ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
