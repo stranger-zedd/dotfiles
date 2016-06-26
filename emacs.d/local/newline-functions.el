@@ -3,13 +3,15 @@
   (interactive)
   (progn
     (end-of-line)
-    (insert "\n")))
+    (insert "\n")
+    (indent-according-to-mode)))
 
 (defun open-line-before ()
   (interactive)
   (progn
     (beginning-of-line)
     (insert "\n")
-    (forward-line -1)))
+    (forward-line -1)
+    (indent-according-to-mode)))
 
 (provide 'newline-functions)
