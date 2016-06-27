@@ -86,7 +86,7 @@
 
 (use-package projectile
   :ensure t
-  :config
+  :init
   (projectile-global-mode)
   :bind
   ("s-f" . projectile-find-file))
