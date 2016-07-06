@@ -65,6 +65,10 @@
 (use-package markdown-mode
   :ensure t)
 
+;; YAML
+(use-package yaml-mode
+  :ensure t)
+
 ;; Ruby
 ;; Use ruby-mode for a bunch of other file types
 (add-to-list 'auto-mode-alist
